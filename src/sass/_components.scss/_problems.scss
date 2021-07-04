@@ -1,0 +1,40 @@
+.problems {
+    background-color: #E5E5E5;
+    .problems__one {
+        width: 1680px;
+        height: 560px;
+        background-color: #111518;
+    }
+    .problems__text {
+        font-weight: 800;
+        font-size: 46px;
+        line-height: 1.30;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #ffffff;
+    }
+}
+.problems__one {
+    background-color: #111518;
+    background-image: url(../images/problems/problems.1x.jpg);
+}
+
+@media (min-device-pixel-ratio:2) and (min-width:1366px),
+(min-resolution:192dpi) and (min-width:1366px),
+(min-resolution:2dppx) and (min-width:1366px) {
+    .problems__one {
+        background-image: url(../images/hero/hero-desktop2x.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.problems {
+    background-color: #E5E5E5;
+.problems__two {
+    width: 1314px;
+    height: 362px;
+    background-color: #ffffff;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    }
+}
