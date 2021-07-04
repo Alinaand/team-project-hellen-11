@@ -4,8 +4,10 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
+@import './components/header';
+@import './components/hero';
 @import './example';
 @import './utils/variables';
 @import './utils/breakpoints';
-@import "./base/common";
-@import "./base/container";
+@import './base/common';
+@import './base/container';
