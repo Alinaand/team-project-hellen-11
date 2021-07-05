@@ -112,9 +112,9 @@
   display: block;
 
   width: 260px;
-  height: 70px;
-  padding: 24px 27px;
 
+  padding: 15px 5px;
+  text-transform: uppercase;
   border: solid 2px;
   border-color: $accent-background-color;
   font-weight: 700;
@@ -132,11 +132,8 @@
 
   @media (min-width: 768px) {
     display: block;
-
     width: 366px;
-    height: 70px;
-    padding: 24px 27px;
-
+    padding: 15px 5px;
     border: solid 2px;
     border-color: $accent-background-color;
     font-weight: 700;
