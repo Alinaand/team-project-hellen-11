@@ -1,0 +1,123 @@
+.guarantee {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin-bottom: 50px;
+}
+
+.guarantee-title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.3;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #111518;
+
+  @media screen and (min-width: 1314px) {
+    font-size: 46px;
+  }
+}
+
+.guarantee-list__background {
+  padding: 50px 0;
+  background-color: #f1f1f1;
+
+  @media screen and (min-width: 768px) {
+    max-width: 688px;
+    padding: 30px 0;
+    padding-left: 40px;
+    padding-right: 50px;
+  }
+
+  @media screen and (min-width: 1314px) {
+    max-width: 1314px;
+    padding: 50px 92px 45px 52px;
+  }
+}
+
+.guarantee-list {
+  margin: 0;
+  padding: 0;
+  padding-left: 7.5px;
+  @media screen and (min-width: 1314px) {
+    padding-left: 11px;
+  }
+}
+
+.guarantee-item {
+  position: relative;
+  padding-left: 28px;
+
+  margin-top: 0;
+  margin-bottom: 5px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+  color: #3d3d3d;
+
+  &.guarantee-item__color {
+    color: #ff6b09;
+  }
+
+  &:not(:last-child) {
+    padding-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-left: 32px;
+  }
+
+  @media screen and (min-width: 1314px) {
+    padding-left: 41px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -6.5px;
+    width: 15px;
+    height: 20px;
+
+    background-image: url(../images/about-img/fire.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media screen and (min-width: 1314px) {
+      left: -11px;
+      width: 22px;
+      height: 30px;
+      background-size: cover;
+    }
+  }
+}
+
+.guarantee-item__color {
+  color: #ff6b09;
+}
+
+.guarantee-item__border {
+  position: absolute;
+  top: 25px;
+  left: 0;
+
+  height: calc(100% - 25px);
+  border-left: 1px dashed #b9b9b9;
+
+  @media screen and (min-width: 1314px) {
+    top: 35px;
+    height: calc(100% - 35px);
+  }
+}
