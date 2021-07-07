@@ -23,7 +23,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-      top: -199px;
+    top: -199px;
   }
 }
 
@@ -69,6 +69,7 @@
   letter-spacing: 0.08em;
   background-color: $main-backgroud-color;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  counter-reset: benefit;
 
   @media screen and (min-width: $tablet) {
     padding: 0 98px 40px 98px;
@@ -99,26 +100,17 @@
       margin-top: 0;
     }
   }
-}
-
-.benefit__item-title {
-  line-height: 1.65;
-  color: $accent-background-color;
-  display: flex;
-  align-items: center;
-  margin-bottom: 0;
-
-  @media screen and (min-width: $desktop) {
-    font-size: 20px;
-  }
 
   &::before {
-    content: '';
-    display: block;
-    width: 15px;
-    height: 2px;
-    background-color: $accent-background-color;
-    margin-right: 8px;
+    counter-increment: benefit;
+    content: '— 0' counter(benefit);
+    color: $accent-background-color;
+    line-height: 1.65;
+    margin-bottom: 0;
+
+    @media screen and (min-width: $desktop) {
+      font-size: 20px;
+    }
   }
 }
 
