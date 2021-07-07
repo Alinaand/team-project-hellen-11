@@ -37,17 +37,14 @@ ul{
 }
 .programs__periods{
     position: relative;
-    // padding-left: 25px;
     align-self: center;
-    // &:not(:last-child){
-    // border-left: 1px solid #FF6B09;
-    // } 
+    
     
     &::after{
     content: "";
     position: absolute;
     top:1180px;
-    left: 200px;
+    left: 120px;
     display: block;
     width: 120px;
     height: 137px;
@@ -55,7 +52,7 @@ ul{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    // background-color: $accent-background-color;
+    
 
 }
 }
@@ -170,15 +167,16 @@ ul{
     display: block;
     margin-top: 8px;
     margin-bottom: 8px;
-
     font-weight: 700;
     font-size: 12px;
     line-height: 1.64;
     letter-spacing: 0.08em;
-
     color: $accent-background-color;
 
 
+}
+.hidden{
+    visibility: hidden;
 }
 .programs__practice-block-title::before{
     content: "";
@@ -190,6 +188,7 @@ ul{
     transform: rotate(90deg);
     margin-right: 10px;
     margin-left: 7px;
+    visibility: visible;
     
 }
 .programs__practice-topic-item{
@@ -215,7 +214,7 @@ padding-bottom: 189px;
     padding-left: 103px;
     &::after{
     
-    left:335px;
+    left:310px;
     top: 570px;
     width: 384px;
     height: 280px;
