@@ -2,14 +2,15 @@ ul {
   padding: 0;
   margin: 0;
 }
-.section {
+.programs__section {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 537px;
   background-color: $alt-background-color;
 }
-.section .container {
+.programs__container {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .programs__title {
@@ -34,26 +35,24 @@ ul {
 }
 .programs__periods {
   position: relative;
-  // padding-left: 25px;
   align-self: center;
-  // &:not(:last-child){
-  // border-left: 1px solid #FF6B09;
-  // }
+ 
 
   &::after {
     content: '';
     position: absolute;
     top: 1180px;
-    left: 200px;
+    left: 122px;
     display: block;
     width: 120px;
     height: 137px;
-    background-image: url(../images/programs-mobile@1x.jpg);
+    background-image: url(../images/programs/programs-mobile@1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
-
+    opacity: 0.5;
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 }
 .programs__period {
@@ -65,7 +64,7 @@ ul {
   (min-resolution: 192dpi) and (max-width: 767px),
   (min-resolution: 2dppx) and (max-width: 767px) {
   .programs__periods::after {
-    background-image: url(../images/programs-mobile@2x.jpg);
+    background-image: url(../images/programs/programs-mobile@2x.jpg);
   }
 }
 
@@ -199,10 +198,10 @@ ul {
 
 
 
-@media screen and (min-width:768px){
-.section{
+@media screen and (min-width:$tablet){
+.programs__section{
 padding-top: 60px;
-padding-bottom: 189px;
+padding-bottom: 392px;
 }
 .programs__periods{
     padding-left: 103px;
@@ -212,7 +211,7 @@ padding-bottom: 189px;
     top: 570px;
     width: 384px;
     height: 280px;
-    background-image: url(../images/programs-tablet@1x.jpg);
+    background-image: url(../images/programs/programs-tablet@1x.jpg);
     
 
 }
@@ -284,6 +283,7 @@ padding-bottom: 189px;
     }
   }
   .programs__period.fifth {
+    padding-left: 56px;
     &::before {
       top: 612px;
       left: 98px;
@@ -291,29 +291,26 @@ padding-bottom: 189px;
   }
 }
 
-@media (min-devise-pixel-ratio: 2) and (min-width: 768px),
-  (min-resolution: 192dpi) and (min-width: 768px),
-  (min-resolution: 2dppx) and (min-width: 768px) {
+@media (min-devise-pixel-ratio: 2) and (min-width: $tablet),
+  (min-resolution: 192dpi) and (min-width: $tablet),
+  (min-resolution: 2dppx) and (min-width: $tablet) {
   .programs__periods::after {
-    background-image: url(../images/programs-tablet@2x.jpg);
+    background-image: url(../images/programs/programs-tablet@2x.jpg);
   }
 }
 
-@media screen and (min-width: 1366px) {
-  .section {
+@media screen and (min-width: $desktop) {
+  .programs__section {
     padding-top: 120px;
     padding-bottom: 363px;
   }
-  .section-container {
-    border-bottom: 1px solid $alt-text-color;
-  }
+  
   .programs__container {
-    border-bottom: 1px solid $alt-text-color;
-  }
-  .container {
     display: block;
     position: relative;
+    
   }
+  
   .programs__title {
     margin-bottom: 100px;
     text-align: start;
@@ -342,7 +339,7 @@ padding-bottom: 189px;
       width: 760px;
       height: 502px;
       opacity: 0.5;
-      background-image: url(../images/programs-desktop@1x.jpg);
+      background-image: url(../images/programs/programs-desktop@1x.jpg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -445,10 +442,10 @@ padding-bottom: 189px;
 }
 
 //2x 1366px+
-@media (min-devise-pixel-ratio: 2) and (min-width: 1366px),
-  (min-resolution: 192dpi) and (min-width: 1366px),
-  (min-resolution: 2dppx) and (min-width: 1366px) {
+@media (min-devise-pixel-ratio: 2) and (min-width: $desktop),
+  (min-resolution: 192dpi) and (min-width: $desktop),
+  (min-resolution: 2dppx) and (min-width: $desktop) {
   .programs__periods::after {
-    background-image: url(../images/programs-desktop@2x.jpg);
+    background-image: url(../images/programs/programs-desktop@2x.jpg);
   }
 }
