@@ -18,13 +18,15 @@
   transform: translateX(-50%);
 
   @media screen and (min-width: $tablet) {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 0;
+    padding-right: 0;
     top: -203px;
+    max-width: 688px;
   }
 
   @media screen and (min-width: $desktop) {
     top: -199px;
+    max-width: 1314px;
   }
 }
 
