@@ -19,7 +19,7 @@
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #111518;
+  color: $primary-text-color;
 
   @media screen and (min-width: 1314px) {
     font-size: 46px;
@@ -28,7 +28,7 @@
 
 .guarantee-list__background {
   padding: 50px 0;
-  background-color: #f1f1f1;
+  background-color: $dark-gray-background-color;
 
   @media screen and (min-width: 768px) {
     max-width: 688px;
@@ -62,10 +62,10 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.67;
-  color: #3d3d3d;
+  color: $secondary-text-color;
 
   &.guarantee-item__color {
-    color: #ff6b09;
+    color: $accent-text-color;
   }
 
   &:not(:last-child) {
@@ -105,7 +105,7 @@
 }
 
 .guarantee-item__color {
-  color: #ff6b09;
+  color: $accent-text-color;
 }
 
 .guarantee-item__border {
@@ -114,7 +114,7 @@
   left: 0;
 
   height: calc(100% - 25px);
-  border-left: 1px dashed #b9b9b9;
+  border-left: 1px dashed $light-gray-color;
 
   @media screen and (min-width: 1314px) {
     top: 35px;
