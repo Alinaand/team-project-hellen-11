@@ -6,13 +6,35 @@
   @media screen and (max-width: 767px) {
     max-width: 320px;
     height: 693px;
+    background-image: linear-gradient(
+      to bottom,
+      $alt-background-color 545px,
+      $alt-background-color 545px,
+      $main-backgroud-color 148px
+    );
+    // background-repeat: no-repeat;
+    // background-size: 390px 585px;
+    // background-position: right bottom 97px;
   }
   @media screen and (min-width: $tablet) {
     max-width: 768px;
+    height: 491px;
+    background-image: linear-gradient(
+      to bottom,
+      $alt-background-color 340px,
+      $alt-background-color 340px,
+      $main-backgroud-color 151px
+    );
   }
   @media screen and (min-width: $desktop) {
     max-width: 1680px;
     height: 710px;
+    background-image: linear-gradient(
+      to bottom,
+      $alt-background-color 560px,
+      $alt-background-color 560px,
+      $main-backgroud-color 150px
+    );
 
     // background-image: linear-gradient(
     //   to bottom,
@@ -24,9 +46,6 @@
 }
 .problems__title-accent {
   color: $accent-background-color;
-}
-.problems__section {
-  max-width: 1314px;
 }
 
 .problems__title {
