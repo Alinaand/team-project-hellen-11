@@ -1,60 +1,61 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: $main-font;
+  // font-size: 18px;
+  // line-height: 1.67;
+  // letter-spacing: 0.02em;
+  color: $primary-text-color;
+  background: $main-backgroud-color;
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.link {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-cl);
   }
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
-  body {
-    font-family: $main-font;
-    // font-size: 18px;
-    // line-height: 1.67;
-    // letter-spacing: 0.02em;
-    color: $primary-text-color;
-    background:$main-backgroud-color;
-  }
-  .list {
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    margin-top: 0;
-  }
-  
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  .link {
-    color: inherit;
-    text-decoration: none;
-    
-    &:hover,
-    &:focus {
-      color: var(--accent-cl);
-    }
-  }
-  
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    border: 0;
-    margin: -1px;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-  
-  ul{
-    list-style: none;
-  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  margin: -1px;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
