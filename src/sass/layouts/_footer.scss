@@ -1,0 +1,142 @@
+.footer__logo-svg {
+    width: 80px;
+    height: 30px;
+}
+
+.footer__svg {
+    width: 20px;
+    height: 19.2px;
+}
+
+.footer__link-instagr {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    background-image: url(../images/instagram-footer.svg);
+}
+
+.footer__reserv {
+    display: block;
+    height: 70px;
+    background: #111518;
+    padding-top: 21px;
+    padding-bottom: 21px;
+}
+
+.footer__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #B9B9B9;
+}
+
+.footer__connect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer__link-logo {
+    margin-bottom: 21px;
+}
+
+.footer__tell {
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.08em;
+}
+
+.footer__nomer {
+    vertical-align: super;
+}
+
+
+@media screen and (min-width: 768px) {
+    .footer__connect {
+        flex-direction: row;
+    }
+
+    .footer__logo-svg {
+        width: 128px;
+        height: 45px;
+    }
+
+    .footer__text {
+    text-align: left;
+    }
+
+    .footer__nomer {
+        position: relative;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+    }
+     
+    .footer__nomer::after {
+        display: inline-block;
+        content: '';
+        width: 1px;
+        margin-left: 24px;
+        background-color: #B9B9B9;
+        height: 40px;
+        position: absolute;
+        top: -6px;
+        right: auto;
+    }
+
+    .footer__link-instagr {
+        margin-right: 0;
+        margin-left: 24px;
+    }
+
+    .footer__tell {
+        margin-bottom: 0px;
+        margin-left: auto;
+        margin-right: 24px;
+    }
+
+    .footer__link-logo {
+        margin-bottom: 0px;
+    }
+
+    .footer__svg {
+        width: 24px;
+        height: 23px;
+    }
+    
+}
+
+@media screen and (min-width: 1314px) {
+    .footer__connect {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .footer__nomer {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 1,23;
+    }
+
+    .footer__tell {
+        margin-bottom: 0px;
+        margin-left: auto;
+        margin-right: 24px;
+    }
+
+    .footer__link-instagr {
+        margin-right: auto;
+        margin-left: 24px;
+    }
+    .footer__nomer::after {
+        top: 0;
+    }
+}
