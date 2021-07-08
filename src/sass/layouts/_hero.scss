@@ -145,6 +145,7 @@
   &:focus {
     background-color: var(--logo-footer-cl);
     color: var(--focus-cl);
+    border: 1px solid $accent-text-color;
   }
 
   @media screen and (min-width: 1314px) {
@@ -162,6 +163,11 @@
 
   @media screen and (min-width: 768px) {
     position: absolute;
+    transform: translateX(90%);
+  }
+
+  @media screen and (min-width: 1314px) {
+    transform: translateX(70%);
   }
 }
 
@@ -178,11 +184,11 @@
 .hero-backgournd__image {
   @media screen and (min-width: 768px) {
     position: relative;
-    left: calc(100% - 40px);
+    //  left: calc(100% - 40px);
     top: 0;
   }
 
   @media screen and (min-width: 1314px) {
-    left: 70%;
+    //  left: 70%;
   }
 }
