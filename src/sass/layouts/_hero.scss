@@ -3,7 +3,7 @@
   padding: 0;
 
   margin-top: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 95px;
 }
 
 .hero-shadow {
@@ -24,6 +24,7 @@
 
   @media screen and (min-width: 1314px) {
     padding-bottom: 0;
+    //  background-position-y: -170px;
     background-image: url(../images/hero/hero-shadow-desktop.png);
   }
 }
@@ -42,7 +43,7 @@
   }
 
   @media screen and (min-width: 1314px) {
-    min-height: 740px;
+    // min-height: 740px;
   }
 }
 
@@ -159,8 +160,9 @@
 
 .hero-backgournd {
   animation-name: opacity-bg-image;
-  animation-duration: 3000ms;
+  animation-duration: 4000ms;
 
+  /* 
   @media screen and (min-width: 768px) {
     position: absolute;
     transform: translateX(90%);
@@ -169,6 +171,7 @@
   @media screen and (min-width: 1314px) {
     transform: translateX(70%);
   }
+  */
 }
 
 @keyframes opacity-bg-image {
@@ -181,6 +184,7 @@
   }
 }
 
+/*
 .hero-backgournd__image {
   @media screen and (min-width: 768px) {
     position: relative;
@@ -192,3 +196,4 @@
     //  left: 70%;
   }
 }
+*/
