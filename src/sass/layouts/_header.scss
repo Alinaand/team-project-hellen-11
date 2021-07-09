@@ -261,3 +261,9 @@
 .menu-button.is-open .icon-burger {
   display: none;
 }
+
+@media (min-width: 1366px) {
+  .site-nav__menu-item:not(:last-child) {
+    margin-right: 40px;
+  }
+}
