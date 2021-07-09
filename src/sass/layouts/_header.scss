@@ -158,9 +158,9 @@
 
 .phone-button {
   display: block;
-
+  flex-shrink: 0;
   width: 260px;
-
+  height: 70px;
   padding: 15px 5px;
   text-transform: uppercase;
   border: solid 2px;
@@ -330,7 +330,13 @@
   .site-nav__menu-item:not(:last-child) {
     margin-right: 40px;
   }
+
+  .page-header__navigation__position {
+  flex-direction: row;
+  }
+
 }
+
 .menu-button__icon {
   fill: #fff;
   height: 20px;
@@ -344,13 +350,13 @@
 
 .page-header__navigation__position {
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   justify-content: center;
   align-items: center;
   width: inherit;
 
   & .phone-button {
-    margin-top: 20px;
+    // margin-top: 20px;
 
     @media screen and (min-width: 768px) and (max-width: 1313px) {
       display: none;
