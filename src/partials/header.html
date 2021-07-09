@@ -1,13 +1,16 @@
 <header class="page-header">
   <div class="container">
-    <a href="" class="nav__link-logo">
-      <svg class="logo-svg">
+    <a href="" class="nav__link-logo " menu-logo-hidden>
+      <svg class="logo-svg" >
         <use href="../src/images/sprite.svg#logo-1"></use>
       </svg>
+      <svg class="logo-svg-2">
+        <use href="../src/images/sprite.svg#logo-2"></use>
+      </svg>
     </a>
-
+    
     <button type="button" class="menu-button" data-menu-button>
-      <svg width="20.5px" height="12px" aria-label="Переключаетель мобильного меню">
+      <svg class="menu-button__icon"  width="20.5px" height="12px" aria-label="Переключаетель мобильного меню">
         <use
           width="20px"
           height="12px"
@@ -15,8 +18,7 @@
           href="../src/images/sprite.svg#burger-menu"
         ></use>
         <use
-          width="15px"
-          height="15px"
+          
           class="icon-burger-close"
           href="../src/images/sprite.svg#burger-close"
         ></use>
@@ -24,6 +26,7 @@
     </button>
 
     <div class="page-header__navigation" data-menu>
+      <div class="page-header__navigation__position">
       <nav class="nav">
         <ul class="site-nav">
           <li class="site-nav__menu-item">
@@ -41,7 +44,12 @@
         </ul>
       </nav>
       <button type="button" class="phone-button">Consultation by phone</button>
+      </div>
     </div>
     
   </div>
+  
+
 </header>
+
+
