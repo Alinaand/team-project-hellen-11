@@ -1,0 +1,38 @@
+.reviews__list img {
+  width: inherit;
+}
+
+.reviews__list {
+  display: flex;
+}
+
+.reviews__list-item {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.reviews__words--color {
+  color: $accent-text-color;
+}
+
+.reviews__graduates--name {
+  color: $accent-text-color;
+}
+
+.reviews__graduates-information {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.08em;
+  color: $light-gray-color;
+}
+
+.reviews__graduates-feedback {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #3d3d3d;
+}
