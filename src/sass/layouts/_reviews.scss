@@ -66,9 +66,19 @@
 }
 .reviews__list {
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-top: 62px;
   margin-bottom: 50px;
+}
+
+.reviews__list-item--mobile:not(:last-child),
+.reviews__list-item:not(:last-child) {
+  margin-right: 10px;
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 30px;
+  }
 }
 
 .reviews__list-item {
