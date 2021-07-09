@@ -35,19 +35,17 @@
       $alt-background-color 560px,
       $main-backgroud-color 150px
     );
-
-    // background-image: linear-gradient(
-    //   to bottom,
-    //   $main-backgroud-color 79%,
-    //   $main-backgroud-color 79%,
-    //   $main-backgroud-color 21%
-    // );
   }
 }
 .problems__title-accent {
   color: $accent-background-color;
 }
-
+// .background-svg {
+//   @media screen and (min-width: $desktop) {
+//     height: 324px;
+//     width: 399px;
+//   }
+// }
 .problems__title {
   padding-top: 25px;
   padding-bottom: 25px;
