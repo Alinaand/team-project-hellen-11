@@ -325,6 +325,19 @@
   display: none;
 }
 
+<<<<<<< Updated upstream
+=======
+
+@media (min-width: 1366px) {
+  .site-nav__menu-item:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+<<<<<<< HEAD
+
+=======
+>>>>>>> 7c903aa8a26af212ec57cf70fb5c5bc9a3c9f72b
+>>>>>>> Stashed changes
 .menu-button__icon {
   fill: #fff;
   height: 20px;
