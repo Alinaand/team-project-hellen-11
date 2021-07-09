@@ -1,5 +1,5 @@
 .description {
-    background: $main-backgroud-color;
+    background: $secondary-background-color;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -118,7 +118,6 @@
     .description__title {
         font-size: 26px;
         line-height: 130%;
-        padding-top: 0%;
     }
 }
 
@@ -135,8 +134,8 @@
     .description__title {
         font-size: 46px;
         text-align: start;
+        margin-left: 10px;
         margin-bottom: 50px;
-        padding-top: 0;
     }
 
     .description__title-two {
@@ -167,9 +166,5 @@
         margin: 0 auto;
         margin-top: 30px;
         background-color: $accent-background-color;
-    }
-
-    .description {
-        padding-top: 130px;
     }
 }
