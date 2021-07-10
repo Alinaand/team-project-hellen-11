@@ -19,7 +19,9 @@
   @media screen and (min-width: $tablet) {
     max-width: 768px;
     height: 491px;
-    background-image: linear-gradient(
+    background-image: 
+   
+    linear-gradient(
       to bottom,
       $alt-background-color 340px,
       $alt-background-color 340px,
@@ -29,12 +31,19 @@
   @media screen and (min-width: $desktop) {
     max-width: 1680px;
     height: 710px;
-    background-image: linear-gradient(
+    background-image:
+    url(../images/fire.svg),
+    url(../images/left.svg),
+    url(../images/right.svg),
+     linear-gradient(
       to bottom,
       $alt-background-color 560px,
       $alt-background-color 560px,
       $main-backgroud-color 150px
     );
+    background-repeat: no-repeat;
+    background-size: 399px 471px, 32px 46px, 30px 47px, 1680px 710px;
+    background-position: left 1281px bottom 150px, top 225px right 373px, top 170px right 24px,center;
   }
 }
 .problems__title-accent {
